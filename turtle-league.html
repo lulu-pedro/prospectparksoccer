@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Turtle League 2026 — A weekly soccer league for Women/Trans/Nonbinary players by Prospect Park Soccer.">
+  <title>Turtle League 2026 — Prospect Park Soccer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="index.html">
+      <img src="pps_turtle_300x300.png" alt="Prospect Park Soccer" class="nav-logo">
+    </a>
+    <button class="nav-hamburger" id="hamburger" aria-label="Open menu">☰</button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="how-we-play.html">How We Play</a></li>
+      <li><a href="turtle-league.html" class="active">Turtle League</a></li>
+      <li><a href="newsletter-signup.html">Newsletter</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <!-- HERO: AMBER SPLIT PANEL -->
+    <div class="tl-hero">
+      <div class="tl-amber-panel">
+        <p class="hero-eyebrow">Welcome back</p>
+        <h1 class="hero-h1">Turtle League</h1>
+        <p class="hero-tagline">A weekly, social soccer league for Women/Trans/Nonbinary players of mixed levels.</p>
+      </div>
+      <div class="hero-photo">
+        <img src="pps-wtnb-summer-2025.jpeg" alt="Turtle League team photo">
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section class="section section--white">
+      <div class="section-inner">
+        <h2>About the league</h2>
+        <p>Turtle League had something special. This summer we are bringing it back.</p>
+        <p>Starting June 2026. Season team signup is currently closed, but you can still join as a free agent through the Turtle League website.</p>
+        <a href="https://turtleleague.com" class="btn btn-outline-green" target="_blank" rel="noopener">View Turtle League Website →</a>
+      </div>
+    </section>
+
+
+  </main>
+
+  <footer class="footer">
+    <span class="footer-name">Prospect Park Soccer</span>
+    <span class="footer-loc">Brooklyn, NY</span>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks  = document.getElementById('nav-links');
+    hamburger.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('open');
+      hamburger.textContent = isOpen ? '✕' : '☰';
+    });
+    navLinks.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        hamburger.textContent = '☰';
+      });
+    });
+  </script>
+
+</body>
+</html>
