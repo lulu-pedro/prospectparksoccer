@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Games, how a Prospect Park Soccer game day runs and how we play together.">
+  <title>Games, Prospect Park Soccer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="index.html">
+      <img src="pps_turtle_300x300.png" alt="Prospect Park Soccer" class="nav-logo">
+    </a>
+    <button class="nav-hamburger" id="hamburger" aria-label="Open menu">☰</button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="join.html">Join</a></li>
+      <li><a href="games.html" class="active">Games</a></li>
+      <li><a href="turtle-league.html">Turtle League</a></li>
+      <li><a href="newsletter-signup.html">Newsletter</a></li>
+      <li><a href="https://www.instagram.com/prospectparksoccer/" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:block;"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"></circle></svg>
+      </a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <div class="page-header">
+      <div class="section-inner">
+        <h1>Games</h1>
+        <p>What happens on the field, and how we play together.</p>
+      </div>
+    </div>
+
+    <!-- GAME FORMAT -->
+    <section class="section section--white">
+      <div style="max-width:1100px;margin:0 auto;padding:0 48px;">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:stretch;">
+          <div class="rules-group">
+            <h3>Game Format</h3>
+            <ul>
+              <li>We play 7v7, usually 3 games over 2 hours with short breaks in between.</li>
+              <li>We start each game day with a short speech — another reason to be on time.</li>
+              <li>At the start of each game, beginners and recently injured players raise their hand. Give them extra space, no contact.</li>
+              <li>We rotate positions between games.</li>
+              <li>After the games, everyone heads to the Adirondack. Come join us. It's half the fun.</li>
+              <li>We play rain or shine. (Thunderstorms are different though, we don't mess with lightning.)</li>
+            </ul>
+          </div>
+          <img src="game-group-sunny.jpeg" alt="Group photo on the field at Prospect Park Soccer" style="width:100%;height:100%;object-fit:cover;border-radius:2px;display:block;">
+        </div>
+      </div>
+    </section>
+
+    <!-- CONDUCT -->
+    <section class="section section--tint" id="conduct">
+      <div class="section-inner" style="max-width:960px;">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start;">
+          <!-- Player Conduct photo -->
+          <img src="game-action.png" alt="Players in action at Prospect Park Soccer" style="width:100%;border-radius:2px;display:block;object-fit:cover;">
+          <div class="rules-group">
+            <h3>Player Conduct</h3>
+            <ul>
+              <li><strong>Every person should be included in our playing, no matter who they are.</strong> Pass to everyone. Give beginners the ball even if they keep missing it.</li>
+              <li>Don't "showboat" and carry the ball, dribble around everyone, score on your own. That's cool other places, not here.</li>
+              <li>Keep your energy mellow, even against equally skilled players.</li>
+              <li>No one should feel that they need to call a foul or end up on the ground. That's a sign the pace is too fast.</li>
+              <li>Be very mindful of physical contact, especially in coed play.</li>
+              <li>Let people make mistakes. If someone accidentally does a handball to cover their face, don't sweat it. If someone does a throw-in wrong, don't yell at them.</li>
+              <li>If someone says they're injured, respect it immediately, no questions asked.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <span class="footer-name">Prospect Park Soccer</span>
+    <span class="footer-loc">Brooklyn, NY</span>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks  = document.getElementById('nav-links');
+    hamburger.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('open');
+      hamburger.textContent = isOpen ? '✕' : '☰';
+    });
+    navLinks.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        hamburger.textContent = '☰';
+      });
+    });
+  </script>
+
+</body>
+</html>
