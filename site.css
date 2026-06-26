@@ -274,6 +274,77 @@ body {
   margin-bottom: 0;
 }
 
+/* ── Games two-column layout ──────────────────── */
+
+.games-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+}
+
+.games-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.games-col-photo {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+
+.games-col-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.games-col-photo.photo-placeholder {
+  aspect-ratio: 4 / 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.games-col-content {
+  padding: 48px 48px 64px;
+}
+
+.games-col-content h2 {
+  font-family: 'Young Serif', serif;
+  font-size: 28px;
+  font-weight: 400;
+  color: var(--text-h);
+  margin-bottom: 28px;
+}
+
+.games-col:first-child {
+  border-right: 1px solid #e8e8e8;
+}
+
+.games-col:first-child .games-col-content {
+  background: #fff;
+}
+
+.games-col:last-child .games-col-content {
+  background: var(--brand-tint);
+}
+
+@media (max-width: 768px) {
+  .games-split {
+    grid-template-columns: 1fr;
+  }
+  .games-col:first-child {
+    border-right: none;
+    border-bottom: 1px solid #e8e8e8;
+  }
+  .games-col-content {
+    padding: 36px 24px 48px;
+  }
+}
+
 /* ── Rules (How We Play) ──────────────────────── */
 
 .rules-group {
