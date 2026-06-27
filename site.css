@@ -506,6 +506,34 @@ body {
   text-transform: uppercase;
 }
 
+/* ── Responsive split grids (join, games) ────────────────────── */
+
+.section-inner-wide {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 48px;
+}
+
+.split-grid {
+  display: grid;
+  gap: 56px;
+}
+
+.split-grid--text-heavy {
+  grid-template-columns: 1fr 1.8fr;
+  align-items: stretch;
+}
+
+.split-grid--equal {
+  grid-template-columns: 1fr 1fr;
+  align-items: stretch;
+}
+
+.split-grid--equal-top {
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+}
+
 /* ── Responsive ───────────────────────────────── */
 
 @media (max-width: 768px) {
@@ -634,5 +662,22 @@ body {
     flex-direction: column;
     gap: 8px;
     text-align: center;
+  }
+
+  .section-inner-wide {
+    padding: 0 24px;
+  }
+
+  .split-grid--text-heavy,
+  .split-grid--equal,
+  .split-grid--equal-top {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .split-grid img {
+    height: 240px !important;
+    width: 100%;
+    object-fit: cover;
   }
 }
