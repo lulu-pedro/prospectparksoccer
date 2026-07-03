@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y4GJDMDK9Y"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-Y4GJDMDK9Y');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get a limited-run 20th anniversary Prospect Park Soccer t-shirt. Celebrate 20 years of friendly soccer in Brooklyn — while supplies last.">
+  <title>20th Anniversary T-Shirts | Prospect Park Soccer, Brooklyn</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="index.html">
+      <img src="pps_turtle_300x300.png" alt="Prospect Park Soccer" class="nav-logo">
+    </a>
+    <button class="nav-hamburger" id="hamburger" aria-label="Open menu">☰</button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="join.html">Join</a></li>
+      <li><a href="games.html">Games</a></li>
+      <li><a href="turtle-league.html">Turtle League</a></li>
+      <li><a href="newsletter-signup.html">Newsletter</a></li>
+      <li><a href="https://www.instagram.com/prospectparksoccer/" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:block;"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"></circle></svg>
+      </a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <div class="newsletter-split">
+
+      <!-- Left: header -->
+      <div class="newsletter-left" style="flex-direction:row;">
+        <div class="newsletter-text" style="flex:1; display:flex; flex-direction:column; justify-content:center;">
+          <h1>20th Anniversary T-Shirts</h1>
+          <p>Celebrating 20 years of friendly soccer in Prospect Park. Limited misprint run, while supplies last.</p>
+        </div>
+      </div>
+
+      <!-- Right: photo on top, shirt details + purchase CTA below -->
+      <div class="newsletter-right">
+        <div class="newsletter-form-wrap">
+          <img src="PPS_TEE_MISPRINT.jpeg" alt="Prospect Park Soccer 20th anniversary t-shirt, front crest and back print reading Friendly Soccer, 20 Years, Since 2006, Sponsored by The Adirondack" style="width:100%;height:auto;border-radius:2px;display:block;margin-bottom:24px;">
+          <h2 style="font-family:'Young Serif', serif; font-size:28px; font-weight:400; color:var(--text-h); margin-bottom:16px;">Celebrating our 20 years! (Freindly Typo included)</h2>
+          <p style="font-size:16px; line-height:1.75; color:var(--text-b); margin-bottom:14px;">Forest green tee with the Prospect Park Soccer crest on the front. Back print reads "Freindly Soccer, 20 Years, Since 2006."</p>
+          <p style="font-size:16px; line-height:1.75; color:var(--text-b); margin-bottom:14px;">Turns out we make mistakes on the field and off it. These are misprints from our anniversary run. Same shirt, small imperfections, sold while supplies last.</p>
+          <a href="https://buy.stripe.com/6oU3cu31x6HRfYnd0MfnO01" class="btn btn-filled-amber" target="_blank" rel="noopener">Buy Now →</a>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <span class="footer-name">Prospect Park Soccer</span>
+    <span class="footer-loc">Brooklyn, NY</span>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks  = document.getElementById('nav-links');
+    hamburger.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('open');
+      hamburger.textContent = isOpen ? '✕' : '☰';
+    });
+    navLinks.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        hamburger.textContent = '☰';
+      });
+    });
+  </script>
+</body>
+</html>
