@@ -21,7 +21,8 @@
 html { scroll-behavior: smooth; }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Karla', sans-serif;
+  font-weight: 300;
   background: var(--bg);
   color: var(--text-b);
   -webkit-font-smoothing: antialiased;
@@ -96,7 +97,7 @@ body {
 }
 
 .btn-nav-join {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Karla', sans-serif;
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
@@ -177,10 +178,10 @@ body {
 }
 
 .hero-h1 {
-  font-family: 'Young Serif', serif;
+  font-family: 'Bitter', serif;
   font-size: 62px;
   font-style: italic;
-  font-weight: 400;
+  font-weight: 700;
   color: #fff;
   line-height: 1.0;
   letter-spacing: -1.5px;
@@ -244,9 +245,9 @@ body {
 }
 
 .section-inner h2 {
-  font-family: 'Young Serif', serif;
+  font-family: 'Bitter', serif;
   font-size: 30px;
-  font-weight: 400;
+  font-weight: 600;
   color: var(--text-h);
   margin-bottom: 18px;
 }
@@ -262,7 +263,7 @@ body {
 
 .btn {
   display: inline-block;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Karla', sans-serif;
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
@@ -322,10 +323,10 @@ body {
 }
 
 .page-hero-text h1 {
-  font-family: 'Young Serif', serif;
+  font-family: 'Bitter', serif;
   font-size: 44px;
   font-style: italic;
-  font-weight: 400;
+  font-weight: 700;
   color: var(--brand);
   line-height: 1.05;
   letter-spacing: -0.5px;
@@ -346,10 +347,10 @@ body {
 }
 
 .page-intro h1 {
-  font-family: 'Young Serif', serif;
+  font-family: 'Bitter', serif;
   font-size: 44px;
   font-style: italic;
-  font-weight: 400;
+  font-weight: 700;
   color: var(--brand);
   line-height: 1.05;
   letter-spacing: -0.5px;
@@ -412,7 +413,7 @@ body {
 }
 
 .games-col-content h2 {
-  font-family: 'Young Serif', serif;
+  font-family: 'Bitter', serif;
   font-size: 28px;
   font-weight: 400;
   color: var(--text-h);
@@ -455,7 +456,7 @@ body {
 }
 
 .rules-group h3 {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Karla', sans-serif;
   font-size: 11px;
   font-weight: 700;
   text-transform: uppercase;
@@ -521,10 +522,10 @@ body {
 }
 
 .newsletter-text h1 {
-  font-family: 'Young Serif', serif;
+  font-family: 'Bitter', serif;
   font-size: 40px;
   font-style: italic;
-  font-weight: 400;
+  font-weight: 700;
   color: #fff;
   line-height: 1.1;
   letter-spacing: -0.5px;
@@ -566,7 +567,7 @@ body {
 }
 
 .footer-name {
-  font-family: 'Young Serif', serif;
+  font-family: 'Bitter', serif;
   font-size: 16px;
   color: rgba(255,255,255,0.88);
 }
